@@ -6,3 +6,171 @@ Green: #00B172
 White: #FFF
 
 */
+
+/* global */
+
+@font-face {
+    font-family: 'gothamlight';
+    src: url('/styles/fonts/webfontkit-20221028-110809/gotham-light-webfont.woff2') format('woff2'),
+         url('/styles/fonts/webfontkit-20221028-110809/gotham-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('/styles/fonts/webfontkit-20221028-110809/gothammedium-webfont.woff2') format('woff2'),
+         url('/styles/fonts/webfontkit-20221028-110809/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0px;
+    font-family: gothamlight, Arial, Verdana, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: gothammedium, Arial, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+
+header {
+    position: fixed; 
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 1rem 1.5rem;
+    left: 0;
+    right: 0;
+}
+
+header>img {
+    height: 4rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 1rem
+}
+
+a {
+    color: black;
+}
+
+/* landing */
+
+#landing {
+    padding-top: 10rem;
+    background: url(../images/landing.jpg) center / cover padding-box ;
+}
+
+#welcome {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#landing p {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* infos */
+
+#infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+#infos h2 {
+    font-size: 2rem;
+    padding-bottom: 4rem;
+    text-decoration: underline #00B172 3px;
+    text-underline-offset: 0.7rem;
+}
+
+#features {
+    display: flex;
+    gap: 2vw;
+}
+
+#features article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+}
+
+#features h3 {
+    color: #00B172;
+    margin-top: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+#features p {
+    text-align: center;
+    padding: 0 2rem;
+}
+
+#features article img {
+    height: 6rem;
+}
+
+/* app */
+
+#app {
+    display: flex;
+    background: url(../images/spotify-icon-white.png) center / 6rem no-repeat #00B172;
+    color: #FFF;
+    padding: 3rem;
+    justify-content: space-around;
+}
+
+#app h2 {
+    text-decoration: underline #FFF 3px;
+    text-underline-offset: 0.7rem;
+}
+
+#appView {
+    width: 30vw;
+    min-width: 15rem;
+    margin-top: 2rem;
+    background: url(../images/spotify-app.jpg) center / contain no-repeat ;
+}
+
+#app article {
+    width: 45%;
+    padding-top: 3rem;
+}
+
+#app h3 {
+    padding-bottom: 2rem;
+}
